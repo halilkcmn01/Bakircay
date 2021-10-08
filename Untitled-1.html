@@ -1,0 +1,60 @@
+<html> 
+<head>
+<script type="text/javascript">
+    function topla()
+    {
+        var s1=parseInt(document.getElementById("txtSayi1").value);
+        var s2=parseInt(document.getElementById("txtSayi2").value);
+        alert(s1+s2);
+    }
+    function cikar()
+    {
+        var s1=parseInt(document.getElementById("txtSayi1").value);
+        var s2=parseInt(document.getElementById("txtSayi2").value);
+        alert(s1-s2);
+    }
+    function carp()
+    {
+        var s1=parseInt(document.getElementById("txtSayi1").value);
+        var s2=parseInt(document.getElementById("txtSayi2").value);
+        alert(s1*s2);
+    }
+    function bol()
+    {
+        var s1=parseInt(document.getElementById("txtSayi1").value);
+        var s2=parseInt(document.getElementById("txtSayi2").value);
+        alert(s1/s2);
+    }
+</script>
+<style>
+body{ background-color: aqua;
+    font-family: sans-serif;   
+   }
+input[type="button"] {
+    background-color: darkseagreen;
+    border-radius: 7px;
+    color: brown;
+    width: 50;
+    height: 50;
+    font-size: 40;
+    position: relative; top: 50%; 
+    
+}
+</style>
+<title>Halil Kocaman 200601084</title>
+</head>
+<body>
+<form method="POST" name="frm">
+1. Sayıyı Gir <input type="text" name="s1" id="txtSayi1">
+<br>
+2. Sayıyı Gİr <input type="text" name="s2" id="txtSayi2">
+<br>
+<input type="button" onclick="topla()" name="hsp" value="+">
+<input type="button" onclick="cikar()" name="hsp" value="-">
+<input type="button" onclick="carp()" name="hsp" value="x">
+<input type="button" onclick="bol()" name="hsp" value="/">
+<br>
+Sonuc= <input type="text" name="ort">
+</form>
+</body>
+</html> 
